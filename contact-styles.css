@@ -1,3 +1,27 @@
+main {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the page takes up at least the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.contact {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+ /* Add a background color and some padding around the form */
+ .contact-form {
+  align-items: center;
+}
+
+.info {
+  justify-content: center;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -11,23 +35,22 @@ input[type=text], select, textarea {
   }
   
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+  button[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
+  }
+
+  i {
+    margin-right:10px;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+
+ 

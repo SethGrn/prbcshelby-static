@@ -5,22 +5,16 @@ body {
     min-height: 100vh; /* Ensure the page takes up at least the full height of the viewport */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-
-    background-image: url('assets/images/drone/dusk_angled.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .logo img {
     width: auto;
-    height: 75px;
-    transition:all 0.4s;
+    height: 50px;
+    transition:all 1s ease;
 }
 
 .header-solid .logo img {
-    width: auto;
-    height: 60px;
+    height: 45px;
 }
 
 .header-solid {
@@ -29,7 +23,7 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     top: 0;
     padding: 20px; /* Add padding to give some space around the header content */
@@ -37,7 +31,8 @@ header {
     justify-content: space-between; /* Evenly space items inside the header */
     display: flex; /* Enable flex layout for header contents */
     color: white;
-    transition:all 0.4s;
+    transition: all 1s, ease;
+    width: 100%
 }
 
 
@@ -47,30 +42,80 @@ footer {
     align-items: flex-end; /* Align footer content to the bottom */
 }
 
-.greeting {
-    font-family:'Courier New', Courier, monospace;
-    color:antiquewhite
-}
-
 header nav {
     display: flex; /* Use flexbox to make the links horizontal */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    margin-right: 5px;
-}
-
-header nav a {
-    margin-right: 5px;
+    margin-right: 30px;
 }
 
 header nav a {
     text-decoration: none; /* Remove underline from links */
     color: white; /* Set link color */
     padding: 10px; /* Add padding to create spacing between links */
+    margin-right: 5px;
 }
 
 /* Optional: Style hover and active states for the links */
 header nav a:hover,
 header nav a.active {
     background-color: #555; /* Change background color on hover/active */
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Ensure the section is the containing block */
+    overflow: hidden; /* Hide overflow to clip the background image */
+    z-index: 10; /* Ensure it is below the header */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.greeting img {
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    z-index: 5; /* Ensure it is below the header */
+    animation: zoom 15s linear;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.vbs-info img {
+    width: auto;
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.donation-form {
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    width: auto;
+    height: 100vh;
+}
+
+.bg-fixed {
+    background-size: cover; /* Ensures the image covers the container */
+    background-attachment: fixed; /* Fixes the background image */
+    background-position: center; /* Centers the background image */
+}
+
+.bg-communion {
+    background-image: url("assets/images/offering_plate_with_flowers.jpg");
+}
+
+.bg-rejoice {
+    background-image: url("assets/images/rejoice_in_the_lord_with_lantern.jpg");
 }

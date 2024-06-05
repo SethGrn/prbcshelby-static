@@ -19,7 +19,7 @@ body {
 
 .header-solid {
     /* Styles applied when the header is stuck */
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(50, 50, 50);
 }
 
 header {
@@ -30,7 +30,7 @@ header {
     align-items: center; /* Align header content to the center vertically */
     justify-content: space-between; /* Evenly space items inside the header */
     display: flex; /* Enable flex layout for header contents */
-    color: white;
+    color: whitesmoke;
     transition: all 1s, ease;
     width: 100%
 }
@@ -38,8 +38,28 @@ header {
 
 footer {
     padding: 20px; /* Add padding to give some space around the footer content */
-    background-color: rgba(128, 128, 128, 0.7);
-    align-items: flex-end; /* Align footer content to the bottom */
+    background-color: rgb(50, 50, 50);
+    color:whitesmoke;
+    justify-content: space-between;
+    display: flex;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+.footer-stack {
+    display: flex;
+}
+
+.footer-info {
+    margin-left: 20px
+}
+
+.footer-link {
+    padding: 10px;
 }
 
 header nav {
@@ -106,6 +126,42 @@ header nav a.active {
     height: 100vh;
 }
 
+.bulletin-button {
+    display: inline-block;
+    padding: 40px 80px;
+    font-size: 24px;
+    background-color: #6a795a;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.bulletin-button:hover {
+    background-color: #3e603f;
+}
+
+.vimeo-embed {
+    background: fixed;
+    background-position: center;
+    background-color: #3b3939;
+    background-image: url("assets/logos/vimeo.webp");
+    height: auto;
+    width: auto;
+}
+
+.employee-section {
+    display:flex;
+}
+
+.employee-card {
+    padding: 20px;
+    justify-content: space-between;
+    margin: 40px;
+}
+
 .bg-fixed {
     background-size: cover; /* Ensures the image covers the container */
     background-attachment: fixed; /* Fixes the background image */
@@ -118,4 +174,12 @@ header nav a.active {
 
 .bg-rejoice {
     background-image: url("assets/images/rejoice_in_the_lord_with_lantern.jpg");
+}
+
+.bg-music {
+    background-image: url("assets/images/music_book.jpg");
+}
+
+.bg-dusk {
+    background-image: url("assets/images/drone/dusk_angled.jpg")
 }

@@ -162,6 +162,14 @@ header nav a.active {
     margin: 40px;
 }
 
+.employee-section {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .bg-fixed {
     background-size: cover; /* Ensures the image covers the container */
     background-attachment: fixed; /* Fixes the background image */

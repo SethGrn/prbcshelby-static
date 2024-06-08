@@ -31,6 +31,11 @@
     </header>
 
     <main class="bg-dusk bg-fixed">
+        <section>
+            <h2>Our weekly schedule</h2>
+            <p></p>
+        </section>
+
         <section class="employee-section">
             <div class="employee-card card" style="width: 22rem;">
                 <img src="assets/images/headshots/Derek_Greene.jpg" class="card-img-top" alt="...">
@@ -53,7 +58,7 @@
               </div>
 
               <div class="employee-card card" style="width: 22rem;">
-                <img src="assets/images/headshots/headshot_placeholder.webp" class="card-img-top" alt="...">
+                <img src="assets/images/headshots/Kaitlyn_Moss.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Kaitlyn G. Moss</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Children and Families Minister</h6>
@@ -102,17 +107,6 @@
     </footer>
 
     <!-- External JavaScript file -->
-    <script src="script.js"></script>
-    <script>
-        $(document).on('scroll', function (){
-            if ($(this).scrollTop() > 40) {
-                $('header').addClass('header-solid')
-            }
-            
-            if ($(this).scrollTop() < 20) {
-                $('header').removeClass('header-solid')
-            }
-        })
-    </script>
+    <script src="./js/headerAnimation.js"></script>
 </body>
 </html>

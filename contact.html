@@ -45,7 +45,7 @@
 
             <div class="contact-form">
                 <h2>Contact Us</h2>
-                <form action="https://formsubmit.co/b8de94dce8306690723655d23246e167" method="POST" >
+                <form id="mailForm" method="POST" >
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your name"><br>
                     <label for="email">Email:</label><br>
@@ -64,17 +64,7 @@
     </footer>
 
     <!-- External JavaScript file -->
-    <script src="script.js"></script>
-    <script>
-        $(document).on('scroll', function (){
-            if ($(this).scrollTop() > 40) {
-                $('header').addClass('header-solid')
-            }
-            
-            if ($(this).scrollTop() < 20) {
-                $('header').removeClass('header-solid')
-            }
-        })
-    </script>
+    <script src="./js/sendMail.js"></script>
+    <script src="./js/headerAnimation.js"></script>
 </body>
 </html>

@@ -45,9 +45,6 @@
 
     <footer>
         <div class="footer-stack">
-            <div class="footer-logo">
-                <img src="assets/logos/white.png">
-            </div>
             <div class="footer-info">
                 <h4>Pleasant Ridge Baptist Church</h4>
                 <p>198 Pleasant Ridge Church Road - Shelby, North Carolina 28152</p>
@@ -57,23 +54,12 @@
         <!-- Social media links or other footer content -->
         <div class="footer-social">
             <p>Connect with us</p>
-            <a class="footer-link" href="https://www.youtube.com/channel/UCAu1eXvSmOhgLN8uFpzgG9A"><i class="fa-brands fa-youtube fa-2xl" style="color: #74C0FC;"></i></a>
-            <a class="footer-link" href="https://www.facebook.com/PRBCShelby"><i class="fa-brands fa-facebook fa-2xl" style="color: #74C0FC;"></i></a>
+            <a class="footer-link" href="https://www.youtube.com/channel/UCAu1eXvSmOhgLN8uFpzgG9A"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a>
+            <a class="footer-link" href="https://www.facebook.com/PRBCShelby"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
         </div>
     </footer>
 
     <!-- External JavaScript file -->
-    <script src="script.js"></script>
-    <script>
-        $(document).on('scroll', function (){
-            if ($(this).scrollTop() > 40) {
-                $('header').addClass('header-solid')
-            }
-            
-            if ($(this).scrollTop() < 20) {
-                $('header').removeClass('header-solid')
-            }
-        })
-    </script>
+    <script src="./js/headerAnimation.js"></script>
 </body>
 </html>

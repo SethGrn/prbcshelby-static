@@ -37,7 +37,6 @@ header {
 
 
 footer {
-    padding: 20px; /* Add padding to give some space around the footer content */
     background-color: rgb(50, 50, 50);
     color:whitesmoke;
     justify-content: space-between;
@@ -55,7 +54,8 @@ footer img {
 }
 
 .footer-info {
-    margin-left: 20px
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .footer-link {
@@ -64,7 +64,7 @@ footer img {
 
 header nav {
     display: flex; /* Use flexbox to make the links horizontal */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     margin-right: 30px;
 }
@@ -144,12 +144,10 @@ header nav a.active {
 }
 
 .vimeo-embed {
-    background: fixed;
-    background-position: center;
-    background-color: #3b3939;
-    background-image: url("assets/logos/vimeo.webp");
-    height: auto;
-    width: auto;
+    background-size: cover; /* Ensures the image covers the container */
+    background-attachment: fixed; /* Fixes the background image */
+    background-position: center; /* Centers the background image */
+    background-image: url("assets/images/drone/dusk_front.jpg");
 }
 
 .employee-section {
@@ -160,6 +158,10 @@ header nav a.active {
     padding: 20px;
     justify-content: space-between;
     margin: 40px;
+}
+
+.employee-card img {
+    height: 350px;
 }
 
 .employee-section {

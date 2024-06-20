@@ -1,0 +1,29 @@
+
+.vimeo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80%;
+    border: 0;
+}
+
+.vimeo-embed {
+    background-size: cover;
+    /* Ensures the image covers the container */
+    background-attachment: fixed;
+    /* Fixes the background image */
+    background-position: center;
+    /* Centers the background image */
+    background-image: url("assets/images/drone/dusk_front.jpg");
+}
+
+.vimeo-loading {
+    background-size: cover;
+    background-attachment: fixed;
+    /* Fixes the background image */
+    background-position: center;
+    /* Centers the background image */
+    background-image: url("assets/Vimeo.gif");
+}

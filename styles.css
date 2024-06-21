@@ -26,13 +26,16 @@ header {
     position: fixed;
     z-index: 1000;
     top: 0;
-    padding: 20px; /* Add padding to give some space around the header content */
     align-items: center; /* Align header content to the center vertically */
     justify-content: space-between; /* Evenly space items inside the header */
     display: flex; /* Enable flex layout for header contents */
     color: whitesmoke;
     transition: all 1s, ease;
     width: 100%
+}
+
+.header-content {
+    padding: 20px;
 }
 
 
@@ -74,12 +77,13 @@ header nav a {
     color: white; /* Set link color */
     padding: 10px; /* Add padding to create spacing between links */
     margin-right: 5px;
+    transition: background-color 0.5s ease;
 }
 
 /* Optional: Style hover and active states for the links */
 header nav a:hover,
 header nav a.active {
-    background-color: #555; /* Change background color on hover/active */
+    background-color: #154061; /* Change background color on hover/active */
 }
 
 .greeting {
@@ -130,7 +134,7 @@ header nav a.active {
     display: inline-block;
     padding: 40px 80px;
     font-size: 24px;
-    background-color: #6a795a;
+    background-color: #246ba2;
     color: white;
     text-align: center;
     border: none;
@@ -140,14 +144,7 @@ header nav a.active {
     text-decoration: none;
 }
 .bulletin-button:hover {
-    background-color: #3e603f;
-}
-
-.vimeo-embed {
-    background-size: cover; /* Ensures the image covers the container */
-    background-attachment: fixed; /* Fixes the background image */
-    background-position: center; /* Centers the background image */
-    background-image: url("assets/images/drone/dusk_front.jpg");
+    background-color: #154061;
 }
 
 .employee-section {
@@ -192,4 +189,48 @@ header nav a.active {
 
 .bg-dusk {
     background-image: url("assets/images/drone/dusk_angled.jpg")
+}
+
+.moto {
+    position:fixed;
+    color:whitesmoke;
+    font-size:25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Ensure it stays above other content */
+}
+
+.moto img {
+    width: 300px;
+    height: auto;
+}
+
+.watch-online-button {
+    display: inline-block;
+    padding: 25px 70px;
+    font-size: 24px;
+    background-color: #246ba2;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.watch-online-button:hover {
+    background-color: #154061;
+}
+
+button[type=submit] {
+    background-color: #246ba2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }

@@ -13,22 +13,27 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Pleasant Ridge Baptist Church</title>
-    <!-- External CSS link -->
+    <!-- External CSS links -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="watch-online-styles.css">
+
+    <!-- Jquery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <a class="header-content" href="index.html">
             <div class="logo">
                 <img src="assets/logos/white-with-text-prbc-full.png" alt="Pleasant Ridge Baptist Church logo">
             </div>
         </a>
-
-        <nav class="header-links">
+    
+    
+        <nav class="header-content header-links">
             <a href="index.html">Home</a>
             <a href="bulletin.html">Bulletin</a>
             <a href="about-us.html">About us</a>
+            <a href="events.html">Events</a>
             <a href="watch-online.html">Watch online</a>
             <a href="give.html">Give</a>
             <a href="contact.html">Contact</a>
@@ -36,8 +41,8 @@
     </header>
     
     <main>
-        <section class="vimeo-embed" style="padding-top:56.25%;position:sticky;">
-            <iframe src="https://vimeo.com/event/1215262/embed" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:75%;height:80%;">
+        <section class="vimeo-embed" style="padding-top:56.25%;">
+            <iframe class="vimeo vimeo-loading" src="https://vimeo.com/event/1215262/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
             </iframe>
         </section>
     </main>

@@ -8,54 +8,64 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact-styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Font Awesome Icons Kit -->
     <script src="https://kit.fontawesome.com/f0e72a699e.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-rejoice bg-fixed">
     <header>
-        <a href="index.html">
+        <a class="header-content" href="index.html">
             <div class="logo">
                 <img src="assets/logos/white-with-text-prbc-full.png" alt="Pleasant Ridge Baptist Church logo">
             </div>
         </a>
-        
-        <!-- Navigation Menu -->
-        <nav class="header-links">
+    
+    
+        <nav class="header-content header-links">
             <a href="index.html">Home</a>
             <a href="bulletin.html">Bulletin</a>
             <a href="about-us.html">About us</a>
+            <a href="events.html">Events</a>
             <a href="watch-online.html">Watch online</a>
             <a href="give.html">Give</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
-        <section class="contact">
-            
-            <div class="info">
-                <h2>Information</h2>
-                <h4>Have questions or need more information? Please fill out the contact form below, and we'll get back to you as soon as possible.</h4>
-                <ul>
-                    <li> <i class="fa-solid fa-location-dot"></i> 198 Pleasant Ridge Church Road</li>
-                    <li> <i class="fa-solid fa-phone"></i> +1 (704) 434-6431</li>
-                    <li> <i class="fa-solid fa-clock"></i> Monday - Thursday, 8:30 AM - 2:30 PM</li>
-                    <li> <i class="fa-solid fa-envelope"></i> pleasant.ridge@att.net</li>
-                </ul>
-            </div>
-
-            <div class="contact-form">
-                <h2>Contact Us</h2>
-                <form id="mailForm" method="POST" >
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your name"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email" placeholder="yourname@example.com"><br>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Type your message"></textarea><br><br>
-                    <button type="submit"><i class='fas fa-paper-plane'></i> Send message</button>
-                </form>
-            </div>
-        </section>
+    <main class="contact-page">
+            <section class="contact">
+                <div class="map">
+                    <img src="assets/images/Designer.png" alt="Map of church location">
+                </div>
+                <div>
+                    <div class="contact-form">
+                        <h2>Contact Us</h2>
+                        <h4>Have questions or need more information? Please fill out the contact form below, and we'll email you back
+                            soon.</h4>
+                        <form id="mailForm" method="POST">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name"><br>
+                            <label for="email">Email:</label><br>
+                            <input type="text" id="email" name="email" placeholder="yourname@example.com"><br>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Type your message"></textarea><br><br>
+                            <button type="submit"><i class='fas fa-paper-plane'></i> Send message</button>
+                        </form>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <h2>Information</h2>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i> Location: <a
+                                        href="https://www.google.com/maps/place/Pleasant+Ridge+Baptist+Church/@35.2869443,-81.6616976,17z/data=!4m15!1m8!3m7!1s0x8857229ac53b58d7:0x3196e6a315e5cf30!2s198+Pleasant+Ridge+Church+Rd,+Shelby,+NC+28152!3b1!8m2!3d35.2869443!4d-81.6591173!16s%2Fg%2F11gty8z0_4!3m5!1s0x8857229acaec84bf:0x8bb4917d7ea862fe!8m2!3d35.2869834!4d-81.6583557!16s%2Fg%2F1w6_pjhd">198
+                                        Pleasant Ridge Church Road</a></li>
+                                <li> <i class="fa-solid fa-phone"></i>Office number: +1 (704) 434-6431</li>
+                                <li> <i class="fa-solid fa-clock"></i> Office hours: Monday - Thursday, 8:30 AM - 2:30 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </main>
 
     <footer>

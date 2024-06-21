@@ -5,12 +5,21 @@ main {
   min-height: 100vh; /* Ensure the page takes up at least the full height of the viewport */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  margin-top: 100px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
 }
 
 .contact {
   background-color: #f2f2f2;
   padding: 20px;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
  /* Add a background color and some padding around the form */
@@ -33,24 +42,18 @@ input[type=text], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
-  
-  /* Style the submit button with a specific background color etc */
-  button[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
 
   i {
     margin-right:10px;
   }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
 
- 
+.map {
+  margin-right: 40px;
+  width: 40vw;
+  min-width: 300px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}

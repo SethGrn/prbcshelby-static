@@ -103,8 +103,8 @@ header nav a.active {
 }
 
 .greeting img {
-    max-width: 100%; /* Ensure the image scales responsively */
-    height: auto;
+    min-width: 100%; /* Ensure the image scales responsively */
+    min-height: 100%;
     object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
     z-index: 5; /* Ensure it is below the header */
     animation: zoom 15s linear;

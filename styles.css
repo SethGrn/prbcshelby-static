@@ -65,6 +65,10 @@ footer img {
     padding: 10px;
 }
 
+footer i {
+    padding-bottom: 30px;
+}
+
 header nav {
     display: flex; /* Use flexbox to make the links horizontal */
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -125,9 +129,14 @@ header nav a.active {
 .donation-form {
     display: flex;
     justify-content: center;
-    overflow:hidden;
     width: auto;
-    height: 100vh;
+    margin-top: 40px;
+}
+
+@media (max-width: 614px) {
+    .donation-form {
+        margin-top: 100px;
+    }
 }
 
 .bulletin-button {
@@ -155,10 +164,7 @@ header nav a.active {
     padding: 20px;
     justify-content: space-between;
     margin: 40px;
-}
-
-.employee-card img {
-    height: 350px;
+    width: 350px;
 }
 
 .employee-section {

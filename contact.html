@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon package -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Webpage Title-->
     <title>Pleasant Ridge Baptist Church</title>
+    
     <!-- External CSS link -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Font Awesome Icons Kit -->
+    
+    <!-- Footer icons -->
     <script src="https://kit.fontawesome.com/f0e72a699e.js" crossorigin="anonymous"></script>
+    
+    <!-- Jquery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body class="bg-rejoice bg-fixed">
     <header>
@@ -34,13 +49,15 @@
 
     <main class="contact-page">
             <section class="contact">
-                <div class="map">
-                    <img src="assets/images/Designer.png" alt="Map of church location">
-                </div>
                 <div>
                     <div class="contact-form">
                         <h2>Contact Us</h2>
-                        <p>Have questions or need more information? Please fill out the contact form below, and we'll email you back soon.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> 198 Pleasant Ridge Church Road</li>
+                            <li> <i class="fa-solid fa-phone"></i>Office number: +1 (704) 434-6431</li>
+                            <li> <i class="fa-solid fa-clock"></i> Office hours: Monday - Thursday, 8:30 AM - 2:30 PM</li>
+                        </ul>
+                        <p>Have questions or need more information? Please fill out the contact form below, and we'll get in touch with you soon.</p>
                         <form id="mailForm" method="POST">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" placeholder="Your name">
@@ -51,22 +68,9 @@
                             <button type="submit"><i class='fas fa-paper-plane'></i> Send message</button>
                         </form>
                     </div>
-                    <div class="info">
-                        <div>
-                            <h2>Information</h2>
-                            <ul>
-                                <li><i class="fa-solid fa-location-dot"></i> Location: <a
-                                        href="https://www.google.com/maps/place/Pleasant+Ridge+Baptist+Church/@35.2869443,-81.6616976,17z/data=!4m15!1m8!3m7!1s0x8857229ac53b58d7:0x3196e6a315e5cf30!2s198+Pleasant+Ridge+Church+Rd,+Shelby,+NC+28152!3b1!8m2!3d35.2869443!4d-81.6591173!16s%2Fg%2F11gty8z0_4!3m5!1s0x8857229acaec84bf:0x8bb4917d7ea862fe!8m2!3d35.2869834!4d-81.6583557!16s%2Fg%2F1w6_pjhd">198
-                                        Pleasant Ridge Church Road</a></li>
-                                <li> <i class="fa-solid fa-phone"></i>Office number: +1 (704) 434-6431</li>
-                                <li> <i class="fa-solid fa-clock"></i> Office hours: Monday - Thursday, 8:30 AM - 2:30 PM</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </section>
     </main>
-
     <footer>
         <div class="footer-stack">
             <div class="footer-info">

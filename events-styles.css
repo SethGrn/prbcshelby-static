@@ -5,16 +5,6 @@
     align-items: center;
 }
 
-.ministries {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    padding: 20px;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
-    margin-top: 100px;
-}
-
 .ministry {
     background-color: #154061;
     width: 300px;

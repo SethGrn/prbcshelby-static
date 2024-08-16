@@ -22,6 +22,10 @@ body {
     background-color: rgb(50, 50, 50);
 }
 
+.header-mobile {
+    background-color: rgb(50, 50, 50);
+}
+
 header {
     position: fixed;
     z-index: 1000;
@@ -247,6 +251,32 @@ button[type=submit] {
     color: white;
     padding: 50px 0px 50px 0px;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    margin-top: 100px;
+    margin-top: 90px;
     background-color: #154061;
+}
+
+.hamburger {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    padding-right: 30px;
+
+}
+
+.ham {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inactive {
+    display: none;
 }

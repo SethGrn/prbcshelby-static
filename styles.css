@@ -83,7 +83,6 @@ header nav a {
     text-decoration: none; /* Remove underline from links */
     color: white; /* Set link color */
     padding: 10px; /* Add padding to create spacing between links */
-    margin-right: 5px;
     transition: background-color 0.5s ease;
 }
 
